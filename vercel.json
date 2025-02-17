@@ -1,0 +1,9 @@
+{
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "/Sol y Luna.html",
+			"permanent": true
+		}
+	]
+}
