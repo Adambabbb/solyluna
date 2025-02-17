@@ -1,0 +1,78 @@
+#Alola {position: absolute;color: white;margin-top: 100px;margin-left: 550px;text-align: center;font-size:90px;}
+
+    .capa-contenedora-horizontal {
+      display: flex;  /* no utilizo flex-direction porque por defecto es horizontal */
+      justify-content: space-between;/* Espaciado horizontal; distribuye las hijas a lo largo de todo el espacio, en este caso el ancho*/
+      align-items: center;/* Centrado verticalmente */
+      height: 200px;
+     
+    }
+
+
+    .capa-contenedora-horizontal2 {
+      display: flex;  /* no utilizo flex-direction porque por defecto es horizontal */
+      justify-content: space-between;/* Espaciado horizontal; distribuye las hijas a lo largo de todo el espacio, en este caso el ancho*/
+      align-items: center;/* Centrado verticalmente */
+      height: 200px;
+      margin-left:100px; 
+     margin-right:100px;
+    }
+
+    .Islas{display: none;color: red;background-color: #9b9b9b;position: absolute;margin-top: -600px;left: 670px;width: 800px;text-align: center;height: 700px;transition-duration: 0.6s}
+    .Audio{height: 20px;margin-left: 10px}
+
+li {
+  color: black;
+display: flex;
+flex-direction: column;
+}
+li .Audio{
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub{
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.expandible {
+  width: 300px;
+  height: 280px;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.expandible:hover {
+  width: 700px;
+  height: 900px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.expandible.color-row:hover {
+  background-color: bisque;
+}
+
+.expandible.color-lit:hover {
+  background-color: tomato;
+}
+
+.expandible.color-pop:hover {
+  background-color: aquamarine;
+}
+
+.contenido-oculto {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  padding: 20px;
+}
+
+.expandible:hover .contenido-oculto {color: black;
+  opacity: 1;
+}

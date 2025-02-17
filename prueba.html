@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .expandible {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.expandible:hover {
+  width: 400px;
+  height: 400px;
+}
+
+.contenido-oculto {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  padding: 20px;
+}
+
+.expandible:hover .contenido-oculto {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="expandible">
+        <div class="contenido-oculto">
+          ¡Contenido revelado!
+        </div>
+      </div>
+      
+</body>
+</html>
+
+
+
+
+
+
+
